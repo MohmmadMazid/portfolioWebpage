@@ -1,0 +1,439 @@
+/* App.css */
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  /* Optional: make text readable */
+  font-family:'Courier New', Courier, monospace;
+  /* Optional: style font */
+}
+
+
+/* **************************** Navbar Section *************************** */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar{
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  /* border-bottom: 1px solid gray ; */
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.navbar .mylogo{
+    height: 100px;
+    width: 100px;
+}
+.navbar .navbar_links{
+  width: 100%;
+  /* margin-top: 2rem; */
+  /* margin-right: 3rem; */
+}
+.navbar ul{
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navbar ul li{
+  margin-right: 2rem;
+  text-decoration: none;
+  list-style: none;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  cursor: pointer;
+}
+.navbar ul li :hover{
+  /* background-color: rgb(95, 8, 8); */
+  color: white;
+  /* border: 1px solid white; */
+  /* border-radius: 5px; */
+  /* border-radius: 5px; */
+  text-decoration: underline rgb(113, 105, 224);
+}
+
+
+/* ******************************************* Hero page styling ******************* */
+.herosection{
+  /* width: 100%; */
+  height: fit-content;
+ 
+}
+
+.herosection .banner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.herosection .banner .image img{
+  height: 300px;
+  width: 300px;
+}
+
+.herosection .banner .intro h1{
+  font-size: xxx-large ;
+  letter-spacing: 2px;
+ 
+}
+.herosection .banner .intro{
+  margin-top: 2rem;
+}
+.herosection .banner .intro .intro1{
+ 
+  background: linear-gradient(270deg, #fc1010e0 10%, #aff30fe6 100%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.herosection .banner p{
+  font-size: large;
+  margin-bottom: 1rem;
+  margin-top: 1rem ;
+}
+
+
+.herosection .banner .heroBtn button{
+  width: 200px;
+  height: 30px;
+  margin-right: 2rem;
+  margin-top: 3rem;
+  border-radius: 10px ;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: larger;
+  background-color: rgb(78, 137, 189);
+  background: linear-gradient(rgb(105, 29, 29),rgb(196, 59, 59));
+}
+    
+
+/* ************************************** ABOUT PAGE STYLING ***************** */
+
+.about{
+  width: 95%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.about .aboutme h1{
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background: linear-gradient(270deg, #fc1010e0 10%, #aff30fe6 100%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about .aboutcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 1rem;
+
+}
+.about .aboutcontainer img{
+  height: 300px;
+  width: 280px;
+  margin-top: 4rem;
+  padding: 2rem;
+  margin-left: 1rem;
+}
+
+.about .skills{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  
+
+}
+.about .skills p{
+  font-size: larger;
+}
+.about .skills ul{
+  margin: 2rem;
+}
+
+.about .skills ul li{
+  text-decoration: none;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.about .aboutExperience{
+  width: 100%;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.about .aboutExperience .achieverNumber{
+  background: linear-gradient(270deg, #ad0f00e0 10%, #eec9c9e6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about .aboutExperience .verticalLine{
+  height: 5px;
+  background: linear-gradient(270deg, #1e470be0 10%, #090938e6 100%);
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+
+
+
+/* ****************************************services ******************************************* */
+
+.services{
+  width: 100%;
+
+}
+.services .services_container .services_head h1{
+  font-weight: 900;
+    font-size: 80px;
+    background: linear-gradient(270deg, #fc1010e0 10%, #aff30fe6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.services .services_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services .services_container .my-services{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.services .services_container .my-services .service{
+  /* background-color: gray; */
+  border: 2px solid rgb(0, 98, 128);
+  border-radius: 10px;
+  height: 300px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem;
+  padding-top: 5rem;
+  transition:all 0.3s ease 0.2s;
+}
+  /* .services .services_container .my-services .service >h1{
+    text-align: center;
+    margin-top: 1rem;
+    font: 800;
+    
+  } */
+.services .services_container .my-services .service:hover{
+  transform: scale(1.1);
+  background-color: rgb(10, 97, 131);
+  /* color: rgb(3, 3, 3); */
+ 
+} 
+
+
+
+/* portfolio  ************************************************************************/
+.portfolio{
+  margin-top: 3rem;
+  /* margin-left: 3rem; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: xx-large;
+}
+.portfolio .latestwork h1{
+  font-weight: 900;
+  font-size: 80px;
+  background: linear-gradient(270deg, #fc1010e0 10%, #aff30fe6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.portfolio .projects{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.portfolio .projects div img{
+  width: 350px;
+  height: 180px;
+  margin: 3rem;
+  transition: all 0.6s ease-in 0.8s;
+}
+.portfolio .projects div img :hover{
+  border: 1px solid lightpink;
+  border-radius: 1rem;
+  transform: scale(1.1);
+}
+.portfolio button{
+  height: 60px;
+  width: 200px;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 3rem;
+  border: none;
+  transition: all 0.3s ease 0.2s;
+
+}
+.portfolio button:hover{
+  transform: scale(1.2);
+  background-color: rgb(87, 52, 52);
+  color: white;
+}
+
+
+/* ******************************************* contact********************************************* */
+
+.contact{
+ width: 100%;
+}
+.contact .continfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  
+}
+.contact .continfo .credendiv{
+  width: 100%;
+  margin-left: 1rem;
+}
+.contact .continfo .credendiv h1{
+  font-size: 2.5rem;
+
+  background: linear-gradient(270deg, #1d9cf1e0 10%, #1aeb13e6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact .continfo .credendiv h1,p,h3{
+  padding: 1rem;
+} 
+.contact .continfo .formdiv{
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 0px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.contact .continfo .formdiv form input,textarea{
+  width: 500px;
+  height:80px;
+  margin-right: 1rem;
+  font-size: xx-large;
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem;
+  background-color: gray;
+  color: white;
+}
+
+
+.contact .continfo .formdiv form button{
+    width: 250px;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: x-large;
+    background: linear-gradient(270deg, #1d9cf1e0 10%, #1aeb13e6 100%);
+      /* -webkit-background-clip: text; */
+      /* -webkit-text-fill-color: transparent;} */
+      /* align-self: center; */
+      cursor: pointer;
+
+}
+
+
+/* *******************************************footer************************** */
+
+.footer{
+    margin-top: 4rem;
+}
+.footer .container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.footer .container .inner1{
+display: flex;
+flex-direction: row;
+margin: 3rem;
+justify-content: space-around;
+}
+.footer .container .inner1 input{
+  height: 60px;
+  width: 350px;
+  border-radius: 3rem;
+  border: none;
+  margin-right: 1rem;
+  background-color: gray;
+}
+.footer .container .inner1 button{
+  width: 150px;
+  height: 2.5rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 20px;
+  background: linear-gradient(270deg, #1d9cf1e0 10%, #1aeb13e6 100%);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;} */
+    cursor: pointer;
+
+}
+
+.footer .container .inner2{
+  height: 5px;
+  width: 90%;
+  background-color: lime;
+  margin-left: 3rem;
+  /* margin-rght: 3rem; */
+}
+
+.footer .container .endinner{
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+}
+.footer .container .endinner div{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3rem;
+}
